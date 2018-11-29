@@ -16,6 +16,13 @@ pipeline {
                 sh 'mvn --version'
             }
 		}
+		stage('three')
+		{
+			steps 
+			{
+                sh 'mvn --version'
+            }
+		}
 		
     }
 }
