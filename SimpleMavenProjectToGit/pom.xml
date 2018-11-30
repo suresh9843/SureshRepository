@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mysample</groupId>
-  <artifactId>SimpleMavenProjectToGit</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.suresh.simpleMavenProjectToGit</groupId>
+	<artifactId>SimpleMavenProjectToGit</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -16,9 +17,22 @@
 			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
- 
+
 	<properties>
 		<spring.version>3.2.3.RELEASE</spring.version>
 	</properties>
-	
+
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshotWrite</id>
+			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
+		</snapshotRepository>
+
+		<repository>
+
+		</repository>
+
+	</distributionManagement>
+
 </project>
