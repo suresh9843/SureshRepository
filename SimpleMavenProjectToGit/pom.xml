@@ -22,6 +22,18 @@
 		<spring.version>3.2.3.RELEASE</spring.version>
 	</properties>
 
+	<repositories>
+		<repository>
+        <id>myRemoteRepository</id>
+        <url>https://mymavenrepo.com/repo/QRXL9PQ5CVoO0NeJfCgQ/</url>
+        <releases>
+           <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>        
+     </repository>
+	</repositories>
 
 	<distributionManagement>
 		<snapshotRepository>
