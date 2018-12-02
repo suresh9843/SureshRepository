@@ -25,15 +25,15 @@
 
 	<repositories>
 		<repository>
-        <id>myRemoteRepository</id>
-        <url>https://mymavenrepo.com/repo/QRXL9PQ5CVoO0NeJfCgQ/</url>
-        <releases>
-           <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>false</enabled>
-        </snapshots>        
-     </repository>
+			<id>myRemoteRepository</id>
+			<url>https://mymavenrepo.com/repo/QRXL9PQ5CVoO0NeJfCgQ/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
@@ -43,7 +43,8 @@
 		</snapshotRepository>
 
 		<repository>
-
+			<id>ReleasedVersiontWrite</id>
+			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
 		</repository>
 
 	</distributionManagement>
