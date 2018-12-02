@@ -5,6 +5,42 @@
 	<artifactId>SimpleMavenProjectToGit</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
+	<properties>
+		<spring.version>3.2.3.RELEASE</spring.version>
+	</properties>
+
+	<scm>
+		<connection>scm:git:file://D:/Git Code/All My Github Codes/.git</connection>
+		<developerConnection>scm:git:file://D:/Git Code/All My Github Codes/.git</developerConnection>
+		<url>scm:git:file://D:/Git Code/All My Github Codes/.git</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<repositories>
+		<repository>
+			<id>myRemoteRepository</id>
+			<url>https://mymavenrepo.com/repo/QRXL9PQ5CVoO0NeJfCgQ/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshotWrite</id>
+			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
+		</snapshotRepository>
+
+		<repository>
+			<id>ReleasedVersiontWrite</id>
+			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -34,41 +70,5 @@
 		</dependency>
 	</dependencies>
 
-	<properties>
-		<spring.version>3.2.3.RELEASE</spring.version>
-	</properties>
-
-	<scm>
-		<connection>scm:git:file://D:/Git Code/All My Github Codes/.git</connection>
-		<developerConnection>scm:git:file://D:/Git Code/All My Github Codes/.git</developerConnection>
-		<url>scm:git:file://D:/Git Code/All My Github Codes/.git</url>
-		<tag>HEAD</tag>
-	</scm>
-
-	<repositories>
-		<repository>
-			<id>myRemoteRepository</id>
-			<url>https://mymavenrepo.com/repo/QRXL9PQ5CVoO0NeJfCgQ/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>snapshotWrite</id>
-			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
-		</snapshotRepository>
-
-		<repository>
-			<id>ReleasedVersiontWrite</id>
-			<url>https://mymavenrepo.com/repo/k2vBozTB2K0HhFn4xURQ/</url>
-		</repository>
-
-	</distributionManagement>
 
 </project>
