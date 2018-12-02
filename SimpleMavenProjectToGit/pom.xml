@@ -21,7 +21,13 @@
 	<properties>
 		<spring.version>3.2.3.RELEASE</spring.version>
 	</properties>
-
+ 	
+ 	<scm>
+ 		<connection>https://github.com/suresh9843/SureshRepository.git</connection>
+ 		<developerConnection>https://github.com/suresh9843/SureshRepository.git</developerConnection>
+ 		<url>https://github.com/suresh9843/SureshRepository.git</url>
+ 		 <tag>HEAD</tag>
+ 	</scm>
 
 	<repositories>
 		<repository>
