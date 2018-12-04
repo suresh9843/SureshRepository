@@ -9,9 +9,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:ssh://github.com/suresh9843/SureshRepository.git</connection>
-		<developerConnection>scm:git:ssh://github.com/suresh9843/SureshRepository.git</developerConnection>
-		<url>http://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git</url>
+		<connection>scm:git:https://github.com/suresh9843/SureshRepository.git</connection>
+		<developerConnection>scm:git:https://github.com/suresh9843/SureshRepository.git</developerConnection>
+		<url>https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	
