@@ -14,6 +14,23 @@ Release next next versions using Local repo as SCM
 		<tag>HEAD</tag>
 </scm>
 
+To use SSH:
+git clone https://github.com/suresh9843/SureshRepository.git
+git clone git@github.com:suresh9843/SureshRepository.git
+
+
+<scm>
+	<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
+	<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>
+	<url>https://github.com/kevinsawicki/github-maven-example</url>
+</scm>
+
+<scm>
+	<connection>scm:git:git@github.com:suresh9843/SureshRepository.git</connection>
+	<developerConnection>scm:git:git@github.com:suresh9843/SureshRepository.git</developerConnection>
+	<url>https://github.com/suresh9843/SureshRepository</url>
+</scm>
+
 ==================================================================================================
 
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.5.2:rollback (default-cli) on project SimpleMavenProjectToGit: Unable to commit files
@@ -39,3 +56,62 @@ pass     : mokkagit1#
 		<url>https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git</url>
 		<tag>HEAD</tag>
 </scm>
+
+
+
+
+
+https://{username}:{password}@github.com/{username}/project.git
+https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git
+
+git remote set-url origin https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git
+git remote add origin https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git
+
+
+git remote set-url origin https://github.com/suresh9843/SureshRepository.git
+git remote add origin https://github.com/suresh9843/SureshRepository.git
+
+ssh-keygen -t rsa -b 4096 -C "suresh9843@gmail.com"
+
+1. click on start --> Git Bash
+2. ssh-keygen -t rsa -C "suresh9843@gmail.com"
+3.
+Suresh@Suresh-PC MINGW64 /d/Git Code/SureshRepository/SimpleMavenProjectToGit (master)
+$ ssh-keygen -t rsa -b 4096 -C "suresh9843@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Suresh/.ssh/id_rsa): ssh_key
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in ssh_key.
+Your public key has been saved in ssh_key.pub.
+The key fingerprint is:
+SHA256:b8KSmgRPMEd75i25bDgazkKSX5aJKZWzqXj874r5fNI suresh9843@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|    .            |
+|   . .           |
+|  o.o o          |
+|  ++ + o         |
+| o.*.o+ S        |
+|+.=+=o = .       |
+|+=.o=.* o o      |
+|+o+B.=E. o       |
+| o*oB*o          |
++----[SHA256]-----+
+
+Suresh@Suresh-PC MINGW64 /d/Git Code/SureshRepository/SimpleMavenProjectToGit (master)
+
+4.  ssh -T git@github.com
+Hi suresh9843! You've successfully authenticated, but GitHub does not provide shell access.
+
+5. $ ls -al ~/.ssh
+total 17
+drwxr-xr-x 1 Suresh 197121    0 Dec  4 23:11 ./
+drwxr-xr-x 1 Suresh 197121    0 Dec  4 23:30 ../
+-rw-r--r-- 1 Suresh 197121 1675 Dec  4 23:11 id_rsa
+-rw-r--r-- 1 Suresh 197121  398 Dec  4 23:11 id_rsa.pub
+-rw-r--r-- 1 Suresh 197121  803 Dec  4 22:46 known_hosts
+
+
+git clone https://github.com/suresh9843/SureshRepository.git
+git clone git@github.com:suresh9843/SureshRepository.git

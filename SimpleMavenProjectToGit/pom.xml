@@ -9,10 +9,9 @@
 	</properties>
 
 	<scm>
-			<connection>scm:git:https://github.com/suresh9843/SureshRepository.git</connection>
-			<developerConnection>scm:git:https://github.com/suresh9843/SureshRepository.git</developerConnection>
-			<url>https://github.com/suresh9843/SureshRepository.git</url>
-			<tag>HEAD</tag>
+		<connection>scm:git:git@github.com:suresh9843/SureshRepository.git</connection>
+		<developerConnection>scm:git:git@github.com:suresh9843/SureshRepository.git</developerConnection>
+		<url>https://github.com/suresh9843/SureshRepository</url>
 	</scm>
 	
 	<repositories>
