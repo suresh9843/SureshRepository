@@ -11,7 +11,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/suresh9843/SureshRepository.git</connection>
 		<developerConnection>scm:git:https://github.com/suresh9843/SureshRepository.git</developerConnection>
-		<url>https://github.com/suresh9843/SureshRepository.git</url>
+		<url>https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	

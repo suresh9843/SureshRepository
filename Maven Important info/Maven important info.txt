@@ -13,3 +13,29 @@ Release next next versions using Local repo as SCM
 		<url>https://github.com/suresh9843/SureshRepository.git</url>
 		<tag>HEAD</tag>
 </scm>
+
+==================================================================================================
+
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.5.2:rollback (default-cli) on project SimpleMavenProjectToGit: Unable to commit files
+[ERROR] Provider message:
+[ERROR] The git-push command failed.
+[ERROR] Command output:
+[ERROR] bash: /dev/tty: No such device or address
+[ERROR] error: failed to execute prompt script (exit code 1)
+[ERROR] fatal: could not read Username for 'https://github.com': No error
+
+Solution for abovve :
+
+
+https://github.com/kemayo/sublime-text-git/issues/176
+git remote add origin https://{username}:{password}@github.com/{username}/project.git
+
+user name: suresh9843
+pass     : mokkagit1#
+
+<scm>
+		<connection>scm:git:https://github.com/suresh9843/SureshRepository.git</connection>
+		<developerConnection>scm:git:https://github.com/suresh9843/SureshRepository.git</developerConnection>
+		<url>https://suresh9843:mokkagit1#@github.com/suresh9843/SureshRepository.git</url>
+		<tag>HEAD</tag>
+</scm>
