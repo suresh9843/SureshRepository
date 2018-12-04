@@ -1,0 +1,15 @@
+Release next next versions using Local repo as SCM
+
+<scm>
+		<connection>scm:git:file://D:/Git Code/SureshRepository/.git</connection>
+		<developerConnection>scm:git:file://D:/Git Code/SureshRepository/.git</developerConnection>
+		<url>scm:git:file://D:/Git Code/SureshRepository/.git</url>
+		<tag>HEAD</tag>
+</scm>
+
+<scm>
+		<connection>scm:git:https://github.com/suresh9843/SureshRepository.git</connection>
+		<developerConnection>scm:git:https://github.com/suresh9843/SureshRepository.git</developerConnection>
+		<url>https://github.com/suresh9843/SureshRepository.git</url>
+		<tag>HEAD</tag>
+</scm>
