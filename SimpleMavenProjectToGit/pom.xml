@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.suresh.simpleMavenProjectToGit</groupId>
 	<artifactId>SimpleMavenProjectToGit</artifactId>
-	<version>1.5-SNAPSHOT</version>
+	<version>1.5</version>
 
 	<properties>
 		<spring.version>3.2.3.RELEASE</spring.version>
@@ -12,7 +12,7 @@
 		<connection>scm:git:git@github.com:suresh9843/SureshRepository.git</connection>
 		<developerConnection>scm:git:git@github.com:suresh9843/SureshRepository.git</developerConnection>
 		<url>https://github.com/suresh9843/SureshRepository</url>
-	  <tag>HEAD</tag>
+	  <tag>SimpleMavenProjectToGit-1.5</tag>
   </scm>
 	
 	<repositories>
