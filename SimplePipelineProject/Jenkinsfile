@@ -1,9 +1,9 @@
 pipeline { 
     agent any  
     stages { 
-        stage('Build') { 
+        stage('Stage1') { 
             steps { 
-               echo 'This is a minimal pipeline.' 
+               echo 'This is my first simple pipeline example.' 
             }
         }
     }
