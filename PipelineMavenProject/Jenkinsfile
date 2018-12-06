@@ -1,16 +1,16 @@
 pipeline 
 { 
     agent any 
-	tools {
-        maven 'Maven3.6' 
-    }
     stages 
 	{ 
-        stage('Check Maven Version') 
+        stage('Maven version check') 
 		{ 
             steps 
-			{ 
-               sh 'mvn --version'
+			{  
+			   withMaven(maven: 'Maven3.6')
+			   {
+			     sh 'mvn --version'
+			   }
             }
         }
     }
