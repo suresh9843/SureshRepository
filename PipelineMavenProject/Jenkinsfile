@@ -6,11 +6,11 @@ pipeline
     }
     stages 
 	{ 
-        stage('Code Checkout Stage') 
+        stage('Check Maven Version') 
 		{ 
             steps 
 			{ 
-               git clone git@github.com:suresh9843/SureshRepository.git
+               sh 'mvn --version'
             }
         }
     }
