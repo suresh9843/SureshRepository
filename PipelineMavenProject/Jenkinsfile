@@ -7,11 +7,12 @@ pipeline
     }
     stages 
 	{
-	stage('Build') 
+	stage('Checkout Stage') 
 	  {
             steps 
         	{  
-	        bat 'mvn clean'
+		 git url: 'git@github.com:suresh9843/SureshRepository.git'
+	         //bat 'mvn clean'
                }
           }
 	/*	
