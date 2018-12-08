@@ -3,13 +3,11 @@ pipeline
     agent any 
     stages 
 	{ 
-        stage('Maven version check') 
-		{ 
+        stage('Testing echo') 
             steps 
-			{  
-			  
-			     echo 'Hello machiii'
-            }
+        	{  
+	        echo 'Hello machiii'
+               }
         }
     }
 }
