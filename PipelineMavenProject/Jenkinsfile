@@ -42,7 +42,7 @@ pipeline
              }
         }
 	
-       stage("Build")
+       stage("Checking Maven, Java Versions")
        {
 	       steps {
 		       bat 'mvn --version'
