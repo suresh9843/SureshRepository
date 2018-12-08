@@ -14,6 +14,15 @@ pipeline
 	        bat 'mvn clean install'
                }
           }
+		
+	stage('Deploy') 
+	  {
+            steps 
+        	{  
+	        bat 'mvn clean deploy'
+               }
+          }
+		
 	/*	
 	  stage('Checking Echo') 
 	  {
