@@ -6,15 +6,15 @@ pipeline
         jdk 'java-1.8' 
     }
     stages 
-	stage('Checking Echo') 
-	 {
+	{
+	  stage('Checking Echo') 
+	  {
             steps 
         	{  
 	        echo 'Hello machiii'
                }
-        }
-	
-	{ 
+          }
+		
 	stage ('Print Env Variables')
 	{
             steps 
