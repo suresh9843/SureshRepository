@@ -22,9 +22,9 @@ pipeline
 			    bat "set"
 			}
 		     }
-		bat 'set'
-                bat 'echo "PATH = ${PATH}"'
-                bat 'echo "M2_HOME = ${MAVEN_HOME}"' 
+		//bat 'set'
+                bat 'echo "Dai Java PATH = ${PATH}"'
+                bat 'echo "Dai Maven Location  = ${MAVEN_HOME}"' 
 		bat '''
                      echo 'Multiline'
                      echo 'Example'
