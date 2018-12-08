@@ -22,13 +22,15 @@ pipeline
 			    bat "set"
 			}
 		     }
-		//bat 'set'
-                bat 'echo "Dai Java PATH = ${set.PATH}"'
-                bat 'echo "Dai Maven Location  = ${set.MAVEN_HOME}"' 
+		 // The bat is command equalent to sh in unix, so wherever u use sh command in unix box u should replace with bat in windows    
+		//bat 'set' 
+                bat 'echo "Dai Java PATH = ${set.PATH}"' // 
 		bat '''
                      echo 'Multiline'
                      echo 'Example'
                     '''
+		     
+		     
              }
         }	
 	
