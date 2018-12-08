@@ -1,6 +1,10 @@
 pipeline 
 { 
     agent any 
+     tools { 
+        maven 'maven-3.6' 
+        jdk 'java-1.8' 
+    }
     stages 
 	{ 
          stage('Testing echo') 
