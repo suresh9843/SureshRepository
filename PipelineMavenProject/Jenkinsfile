@@ -19,7 +19,7 @@ pipeline
 			}
 			else {
 				echo 'This is a Windows box, so your script should use bat command for executing steps'
-			    bat set
+			    bat "set"
 			}
 		     }
 		bat 'set'
