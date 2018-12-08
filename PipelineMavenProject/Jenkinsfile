@@ -11,6 +11,15 @@ pipeline
 	{
             steps 
 	     {
+		     
+		if (isUnix()) {
+	            echo 'This is a unix box, so your script should use sh command for executing steps'
+		    sh env
+		}
+		else {
+			echo 'This is a Windows box, so your script should use bat command for executing steps'
+		    bat set
+		}
 		bat 'set'
                 bat 'echo "PATH = ${PATH}"'
                 bat 'echo "M2_HOME = ${MAVEN_HOME}"' 
