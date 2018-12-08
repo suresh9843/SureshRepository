@@ -14,5 +14,16 @@ pipeline
 	        echo 'Hello machiii'
                }
         }
+	stage ('Initialize Env')
+	{
+            steps 
+	     {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${MAVEN_HOME}"
+                ''' 
+             }
+        }	
+		
     }
 }
