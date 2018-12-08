@@ -7,13 +7,6 @@ pipeline
     }
     stages 
 	{ 
-         stage('Testing echo') 
-	 {
-            steps 
-        	{  
-	        echo 'Hello machiii'
-               }
-        }
 	stage ('Initialize Env')
 	{
             steps 
@@ -24,6 +17,14 @@ pipeline
                 ''' 
              }
         }	
+	
+        stage('Testing echo') 
+	 {
+            steps 
+        	{  
+	        echo 'Hello machiii'
+               }
+        }
 		
     }
 }
