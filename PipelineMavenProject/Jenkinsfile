@@ -22,7 +22,7 @@ pipeline
 			    bat "set"
 			}
 		     }
-		bat 'set'
+		bat 'set.JAVA_HOME'
                 bat 'echo "PATH = ${PATH}"'
                 bat 'echo "M2_HOME = ${MAVEN_HOME}"' 
 		bat '''
