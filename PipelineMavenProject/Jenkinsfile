@@ -12,8 +12,8 @@ pipeline
             steps 
 	     {
                 bat '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${MAVEN_HOME}"
+                    echo "PATH =" ${PATH}
+                    echo "M2_HOME =" ${MAVEN_HOME}
                 ''' 
              }
         }	
