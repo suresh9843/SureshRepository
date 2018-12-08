@@ -32,10 +32,10 @@ pipeline
 		     }
 		 // The bat is command equalent to sh in unix, so wherever u use sh command in unix box u should replace with bat in windows    
 		//bat 'set' 
-                bat 'echo "Dai Java PATH = ${set.PATH}"' // 
+                bat 'echo "single line command execution' // 
 		bat '''
-                     echo 'Multiline'
-                     echo 'Example'
+                     echo 'Multiline command execution 1'
+                     echo 'Multiline command execution 2'
                     '''
 		     
 		     
@@ -46,6 +46,7 @@ pipeline
        {
 	       steps {
 		       bat 'mvn --version'
+		       bat 'java -version'
 	       }
 	       
        }		
