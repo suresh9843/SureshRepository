@@ -11,10 +11,12 @@ pipeline
 	{
             steps 
 	     {
-                bat '''
-                    echo "PATH =" ${PATH}
-                    echo "M2_HOME =" ${MAVEN_HOME}
-                ''' 
+                bat 'echo "PATH = ${PATH}"'
+                bat 'echo "M2_HOME = ${MAVEN_HOME}"' 
+		bat '''
+                     echo 'Multiline'
+                     echo 'Example'
+                    '''
              }
         }	
 	
