@@ -7,11 +7,19 @@ pipeline
     }
     stages 
 	{
+	stage('Build') 
+	  {
+            steps 
+        	{  
+	        bat 'mvn clean'
+               }
+          }
+	/*	
 	  stage('Checking Echo') 
 	  {
             steps 
         	{  
-	        echo 'Hello machiii'
+	        echo 'This is my first stage '
                }
           }
 		
@@ -27,11 +35,10 @@ pipeline
 			}
 			else {
 				echo 'This is a Windows box, so your script should use bat command for executing steps'
-			    bat "set"
+			    bat "set"  // this prints the all the environment variables
 			}
 		     }
-		 // The bat is command equalent to sh in unix, so wherever u use sh command in unix box u should replace with bat in windows    
-		//bat 'set' 
+		 // The bat is command equalent to sh in unix, so wherever u use sh command in unix box u should replace with bat in windows    		 
                 bat 'echo "single line command execution' // 
 		bat '''
                      echo 'Multiline command execution 1'
@@ -50,7 +57,7 @@ pipeline
 	       }
 	       
        }		
-	
+	*/
         
 		
     }
