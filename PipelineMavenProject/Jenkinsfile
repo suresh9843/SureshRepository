@@ -11,7 +11,7 @@ pipeline
 	  {
             steps 
         	{  
-		 git submodule add https://github.com/suresh9843/SureshRepository.git testmodule
+		 git 'submodule add https://github.com/suresh9843/SureshRepository.git testmodule'
 		 //git url: 'git@github.com:suresh9843/SureshRepository.git'
 	         //bat 'mvn clean'
                }
