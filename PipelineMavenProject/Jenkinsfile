@@ -3,7 +3,8 @@ pipeline
     agent any 
     stages 
 	{ 
-        stage('Testing echo') 
+         stage('Testing echo') 
+	 {
             steps 
         	{  
 	        echo 'Hello machiii'
