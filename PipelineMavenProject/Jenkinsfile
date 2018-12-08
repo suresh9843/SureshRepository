@@ -6,8 +6,16 @@ pipeline
         jdk 'java-1.8' 
     }
     stages 
+	stage('Checking Echo') 
+	 {
+            steps 
+        	{  
+	        echo 'Hello machiii'
+               }
+        }
+	
 	{ 
-	stage ('Initialize Env')
+	stage ('Print Env Variables')
 	{
             steps 
 	     {
@@ -34,13 +42,7 @@ pipeline
              }
         }	
 	
-        stage('Testing echo') 
-	 {
-            steps 
-        	{  
-	        echo 'Hello machiii'
-               }
-        }
+        
 		
     }
 }
