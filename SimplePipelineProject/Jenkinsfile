@@ -3,7 +3,12 @@ pipeline {
     stages { 
         stage('Stage1') { 
             steps { 
-               echo 'This is my first simple pipeline example.' 
+               echo 'This is my first simple pipeline example. Stage1' 
+            }
+        }
+		 stage('Stage2') { 
+            steps { 
+               echo 'This is my first simple pipeline example. Stage2' 
             }
         }
     }
