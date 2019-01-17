@@ -1,3 +1,9 @@
+My Git: password:
+suresh9843
+m...agit1.
+
+
+
 Release next next versions using Local repo as SCM
 
 <scm>
@@ -16,6 +22,7 @@ Release next next versions using Local repo as SCM
 
 To use SSH:
 git clone https://github.com/suresh9843/SureshRepository.git
+git clone git@github.com:suresh9843/PipelineMavenProject.git
 git clone git@github.com:suresh9843/SureshRepository.git
 
 
