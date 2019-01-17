@@ -24,7 +24,7 @@ To use SSH:
 git clone https://github.com/suresh9843/SureshRepository.git
 git clone git@github.com:suresh9843/PipelineMavenProject.git
 git clone git@github.com:suresh9843/SureshRepository.git
-
+git clone  git@github.com:suresh9843/SimpleMavenProject1.git
 
 <scm>
 	<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
