@@ -122,3 +122,12 @@ drwxr-xr-x 1 Suresh 197121    0 Dec  4 23:30 ../
 
 git clone https://github.com/suresh9843/SureshRepository.git
 git clone git@github.com:suresh9843/SureshRepository.git
+
+To update pom.xml property version
+https://stackoverflow.com/questions/25034556/how-can-i-update-a-property-in-a-maven-pom
+mvn versions:set-property -Dproperty=your.property -DnewVersion=arbitrary_value
+
+mvn versions:set-property -Dproperty=SimpleMavenProjectToGit.version -DnewVersion=1.13
+
+How to pass any version name from jenkins job to pom.xml:
+clean deploy -DSimpleMavenProjectToGitReleasedVersion="$SimpleMavenProjectToGitReleasedVersion" 
