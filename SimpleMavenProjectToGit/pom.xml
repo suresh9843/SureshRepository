@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.suresh.simpleMavenProjectToGit</groupId>
 	<artifactId>SimpleMavenProjectToGit</artifactId>
@@ -12,9 +13,9 @@
 		<connection>scm:git:git@github.com:suresh9843/SureshRepository.git</connection>
 		<developerConnection>scm:git:git@github.com:suresh9843/SureshRepository.git</developerConnection>
 		<url>https://github.com/suresh9843/SureshRepository</url>
-	  <tag>HEAD</tag>
-  </scm>
-	
+		<tag>HEAD</tag>
+	</scm>
+
 	<repositories>
 		<repository>
 			<id>myRemoteRepository</id>
@@ -55,6 +56,16 @@
 				</dependencies>
 			</plugin>
 		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>version.properties</include>
+				</includes>
+			</resource>
+		</resources>
 	</build>
 	<dependencies>
 		<dependency>

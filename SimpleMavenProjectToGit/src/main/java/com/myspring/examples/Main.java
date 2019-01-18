@@ -19,5 +19,8 @@ public class Main {
 		service.setName("Spring");
 		message = service.sayHello();
 		System.out.println(message);
+		
+		SimpleUtil util = new SimpleUtil();
+		util.myMessage();
 	}
 }
