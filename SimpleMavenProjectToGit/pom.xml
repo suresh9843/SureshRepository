@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.suresh.simpleMavenProjectToGit</groupId>
 	<artifactId>SimpleMavenProjectToGit</artifactId>
-	<version>1.12-SNAPSHOT</version>
+	<version>1.12</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -14,7 +13,7 @@
 		<connection>scm:git:git@github.com:suresh9843/SureshRepository.git</connection>
 		<developerConnection>scm:git:git@github.com:suresh9843/SureshRepository.git</developerConnection>
 		<url>https://github.com/suresh9843/SureshRepository</url>
-		<tag>HEAD</tag>
+		<tag>SimpleMavenProjectToGit-1.12</tag>
 	</scm>
 
 	<repositories>
