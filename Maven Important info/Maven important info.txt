@@ -125,9 +125,17 @@ git clone git@github.com:suresh9843/SureshRepository.git
 
 To update pom.xml property version
 https://stackoverflow.com/questions/25034556/how-can-i-update-a-property-in-a-maven-pom
+https://stackoverflow.com/questions/19922435/how-to-push-changes-to-github-after-jenkins-build-completes
+
 mvn versions:set-property -Dproperty=your.property -DnewVersion=arbitrary_value
 
 mvn versions:set-property -Dproperty=SimpleMavenProjectToGit.version -DnewVersion=1.13
+mvn versions:set-property -Dproperty=SimpleMavenProjectToGit.version -DnewVersion=$SimpleMavenProjectToGitReleasedVersion"
+versions:update-properties -Dproperty=SimpleMavenProjectToGit.version -DnewVersion="$SimpleMavenProjectToGitReleasedVersion" -Dproperty=util.version -DnewVersion=1.1111
 
 How to pass any version name from jenkins job to pom.xml:
 clean deploy -DSimpleMavenProjectToGitReleasedVersion="$SimpleMavenProjectToGitReleasedVersion" 
+
+
+To checkin file using scm maven plugin
+ mvn -Dmessage="<commit_log_here>" scm:checkin
